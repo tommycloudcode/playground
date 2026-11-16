@@ -146,11 +146,12 @@ export function createGlobeScene(canvas, { onReady } = {}) {
     return texture
   }
 
-  const dayTexture = loadTexture('/textures/earth_day_4096.jpg')
-  const nightTexture = loadTexture('/textures/earth_lights_2048.png')
-  const cloudsTexture = loadTexture('/textures/earth_clouds_1024.png')
-  const specularTexture = loadTexture('/textures/earth_specular_2048.jpg', false)
-  const normalTexture = loadTexture('/textures/earth_normal_2048.jpg', false)
+  const textureBase = `${import.meta.env.BASE_URL}textures/`
+  const dayTexture = loadTexture(`${textureBase}earth_day_4096.jpg`)
+  const nightTexture = loadTexture(`${textureBase}earth_lights_2048.png`)
+  const cloudsTexture = loadTexture(`${textureBase}earth_clouds_1024.png`)
+  const specularTexture = loadTexture(`${textureBase}earth_specular_2048.jpg`, false)
+  const normalTexture = loadTexture(`${textureBase}earth_normal_2048.jpg`, false)
 
   const earthGroup = new THREE.Group()
   scene.add(earthGroup)
