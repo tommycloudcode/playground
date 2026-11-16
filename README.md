@@ -2,6 +2,10 @@
 
 A full-window, real-time 3D Earth rendered with React + three.js.
 
+**Live:** https://tommycloudcode.github.io/playground/ — deployed to GitHub Pages
+by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to
+`main`.
+
 - **Rotating globe** centred in the viewport at roughly half the window height.
 - **Real sunlight**: the lit hemisphere is computed from the actual subsolar point
   (solar declination + Greenwich sidereal time), so the day/night terminator and
