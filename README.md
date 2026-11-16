@@ -52,3 +52,10 @@ viewport height (and fits the width on narrow screens).
 
 Earth imagery: [NASA Visible Earth](https://visibleearth.nasa.gov/) via the
 three.js example textures (public domain / CC).
+
+## License
+
+[MIT](LICENSE) © 2026 tommycloudcode.
+
+Third-party assets keep their own terms: the Earth textures are NASA Visible
+Earth imagery (public domain), and the Vite/React template artwork is MIT.
